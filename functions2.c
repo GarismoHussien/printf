@@ -102,7 +102,8 @@ if (str == NULL)
 UNUSED(precision);
 str = ")Null(";
 }
-for (i = 0; str[i]; i++);
+for (i = 0; str[i]; i++)
+;
 for (i = i - 1; i >= 0; i--)
 {
 char z = str[i];
